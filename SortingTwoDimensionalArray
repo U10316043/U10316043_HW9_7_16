@@ -12,7 +12,7 @@ public class SortingTwoDimensionalArray
       //compare the front and later element in order in m array
       if (m[j][0] >m[j+1][0])
       {
-       //change 
+       //compare and change 
         int temp = m[j][0];
         int temp1 = m[j][1];
         m[j][0]= m[j+1][0];
@@ -37,17 +37,17 @@ public class SortingTwoDimensionalArray
   
   }
   //Just a test
-  public static void main (String[] args)
+  public static void main (String[] args)//main method
   {
     int[][] m = { {4,2},{1,7},{4,5},{1,2},{1,1},{4,1}};//m array
-    sort(m);
+    sort(m);//sort two dimention array
     for (int i =0;i<m.length;i++)
     {
       for (int j =0;j<m[i].length;j++)
       {
         System.out.print(m[i][j] + " ");  //print them in order
       }
-      System.out.println();
+      System.out.println();//print the result
     }
   }
 }
